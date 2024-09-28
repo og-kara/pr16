@@ -1,0 +1,557 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "Manrope-VariableFont";
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    outline: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.to-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #3c6d3f;
+    border: 1px solid white;
+}
+
+/* Шапка */
+header {
+    height: 100px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+nav a {
+    font-family: "Montserrat-Medium";
+    font-size: 19px;
+    font-weight: 800;
+    color: #3c6d3f;
+    font-weight: 500;
+}
+.bc{
+    background-color: #3c6d3c;
+}
+nav a:hover {
+    transform: scale(0.9);
+    transition: .9s;
+}
+nav a:not(:hover) {
+    transition: .9s;
+}
+.btn_header {
+    background-color: #3c6d3f;
+    color: white;
+    font-family: "Montserrat-Regular";
+    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    width: 195px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+.btn_header:hover {
+    border: 1px solid #3c6d3f;
+    color: #3c6d3f;
+    transform: scale(0.9);
+    transition: .9s;
+    background-color: white;
+    font-weight: 600;
+}
+.btn_header:not(:hover) {
+    transition: .9s;
+}
+
+/* Баннер */
+.banner {
+    background-image: url(../image/ncrwy164yfgbg.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding-top: 10%;
+}
+.banner_text {
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-family: "Montserrat-Medium";
+    font-size: 75px;
+    padding-bottom: 30px;
+}
+p {
+    font-size: 31px;
+    font-family: "Montserrat-Regular";
+    padding-bottom: 45px;
+    font-weight: 400;
+}
+.btn_banner {
+    color: white;
+    font-family: "Montserrat-Medium";
+    background-color: transparent;
+    font-size: 27px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 400px;
+    height: 60px;
+}
+.btn_banner:hover {
+    transform: scale(0.9);
+    transition: .9s;
+    background-color: #3c6d3f;
+    border: none;
+    color: white;
+}
+.btn_banner:not(:hover) {
+    transition: .9s;
+}
+
+/* Услуги */
+h2 {
+    padding: 70px 0 30px;
+    color: #3c6d3f;
+    font-size: 43px;
+    text-align: center;
+    font-family: "Montserrat-Medium";
+}
+.uslugi_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.uslugi p {
+    font-size: 25px;
+    font-family: "Montserrat-Regular";
+    font-weight: 600;
+    text-align: center;
+    color: #3c6d3f;
+    padding-bottom: 10px;
+}
+h3 {
+    color: #3c6d3f;
+    font-family: "Montserrat-Medium";
+    text-align: center;
+    font-size: 18px;
+    padding: 21px 0 60px
+}
+.uslugi img {
+    border-radius: 15px;
+}
+.uslugi img:hover {
+    transform: scale(1.1);
+    transition: .9s;
+}
+.uslugi img:not(:hover) {
+    transition: .9s;
+}
+/* Тренировки */
+.tren {
+    background-color: #3c6d3f;
+    padding-bottom: 70px;
+}
+h4 {
+    padding: 70px 0 20px;
+    color: white;
+    font-size: 43px;
+    text-align: center;
+    font-family: "Montserrat-Medium";
+}
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+}
+.in {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Montserrat-Medium";
+}
+.bnt_rows {
+    color: #3c6d3f;
+    font-size: 18px;
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+.bnt_rows_1 {
+    background-color: #3c6d3f;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    width: 70px;
+    font-family: "Montserrat-Medium";
+    height: 50px;
+    padding: 10px;
+    font-weight: 600;
+}
+.bnt_rows:hover {
+    transition: .9s;
+    background-color: #3c6d3f;
+    color: white;
+    border: 1px solid white;
+}
+.bnt_rows:not(:hover) {
+    transition: .9s;
+}
+.tren p {
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+.tren h3 ,
+.card h3{
+    color: white;
+    font-family: "Montserrat-Medium";
+    font-size: 25px;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.trener {
+    color: white;
+    font-family: "Montserrat-Medium";
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.cards,
+.cards_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.cards_1{
+    padding-bottom: 60px;
+}
+.card img {
+    width: 300px;
+    height: 300px;
+}
+.card {
+    text-align: center;
+}
+.btn_tren {
+    background-color: white;
+    border: none;
+    font-size: 17px;
+    font-family: "Montserrat-Medium";
+    color: #3c6d3f;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+.btn_tren:hover {
+    transition: .9s;
+    background-color: #3c6d3f;
+    border: 1px solid white;
+    color: white;
+}
+.btn_tren:not(hover) {
+    transition: .9s;
+}
+
+/* Эксперты */
+.expert {
+    padding-bottom: 30px;
+}
+.expert_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+.expert_card img {
+    border-radius: 30px;
+}
+.expert_card:hover {
+    transform: scale(1.1);
+    transition: .9s;
+}
+.expert_card:not(:hover) {
+    transition: .9s;
+}
+.exp {
+    color: #3c6d3f;
+    font-size: 20px;
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    text-align: center;
+}
+.info {
+    font-size: 15px;
+    color: white;
+}
+.info_1 {
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Подписка */
+.podpiska {
+    background-image: url(../image/фитнес-центр.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+.pod {
+    font-size: 35px;
+    color: white;
+    font-family: "Montserrat-Medium";
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+.podp {
+    color: rgb(219, 219, 219);
+    font-size: 23px;
+    text-align: center;
+    font-family: "Montserrat-Medium";
+    font-weight: 400;
+    padding-bottom: 0;
+}
+.oform {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Montserrat-Medium";
+    font-weight: 400;
+    padding: 25px;
+}
+input {
+    border-radius: 50px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in;
+    width: 500px;
+}
+.form__btn {
+    height: 50px;
+    padding: 12px;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    background-color: #3c6d3f;
+    transition: background-color 0.2s ease-in;
+    border: none;
+    border-radius: 50px;
+    width: 500px;
+    font-family: "Montserrat-Medium";
+}
+.form__btn:hover {
+    background-color: #fff;
+    color: #3c6d3f;
+    transition: .9s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.form__btn:not(:hover) {
+    transition: .9s;
+}
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Рецепты */
+.recipe {
+    background-color: #3c6d3f;
+    padding-bottom: 70px;
+}
+.recipe p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+.recipe_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 70px;
+    gap: 20px;
+}
+.recipe_cards img {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+}
+.recipe_card {
+    background-color: white;
+    border-radius: 20px;
+    height: 450px;
+    width: 300px;
+}
+.timing {
+    color: #3c6d3f;
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+.name {
+    color: #5f7761;
+    font-family: "Montserrat-Medium";
+    font-size: 17px;
+    padding-left: 10px
+}
+.time {
+    color: #3c6d3f;
+    font-family: "Montserrat-Medium";
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px 0 0 10px
+}
+.kl {
+    color: #3c7b40;
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0 15px 10px;
+}
+
+/* СМИ */
+.smi {
+    background-color: #3c6d3f;
+    padding-bottom: 70px;
+}
+.smi h4 {
+    font-size: 37px;
+    padding-bottom: 40px;
+}
+.img_smi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+.conect {
+    background-image: url(../image/rv7auf704zcgibym9j4j0cijsc4w8mhe.jpg);
+    height: 50vh;
+    background-size: cover;
+    padding-top: 10%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+}
+.btn_conect {
+    color: white;
+    background-color: transparent;
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 50px;
+    border: 3px solid white;
+    padding: 15px;
+}
+.btn_conect:hover {
+    transform: scale(0.9);
+    transition: .9s;
+}
+.btn_conect:not(:hover) {
+    transition: .9s;
+}
+
+/* Footer */
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.href {
+    display: flex;
+    flex-direction: column;
+}
+.href img {
+    width: 40px;
+    margin: 10px;
+}
+.nav_foot {
+    display: flex;
+    flex-direction: column;
+}
+.contact a {
+    color: #3c7b40;
+    font-family: "Montserrat-Medium";
+    font-size: 16px;
+}
+.nav_foot a {
+    color: #3c7b40;
+    font-family: "Montserrat-Medium";
+    font-size: 16px;
+    margin: 10px;
+}
+
+
+.phone {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.799);
+    padding: 30px;
+    color: white;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.phone.show{
+    display: block;
+}
